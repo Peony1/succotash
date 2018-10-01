@@ -1,0 +1,54 @@
+body,p,hr,h1,h2,h3,h4,h5,h6,ul,dl,dt,dd{
+    margin: 0;
+    padding:0;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+img{
+    border: 0;
+}
+a{
+    color: #000;
+    text-decoration:none;
+}
+input{
+    margin: 0;
+}
+body{
+    font-family: "微软雅黑","苹方","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.float::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* 单行文字超出显示省略号 */
+/* 规定容器宽度 */
+.hidden-one{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.hidden-two{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;     /* 固定显示3行*/
+    overflow: hidden;
+    /* 容器高度不能固定 */
+}
+.hidden-three{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;     /* 固定显示3行*/
+    overflow: hidden;
+    /* 容器高度不能固定 */
+}
+.hidden-four{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;     /* 固定显示3行*/
+    overflow: hidden;
+    /* 容器高度不能固定 */
+}
